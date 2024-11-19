@@ -1,0 +1,219 @@
+<footer>
+    <!-- <div class="footer_title_wrap">
+        <h2>
+            스킨메드는 더 나은 삶을 위해<br>
+            끊임없이 연구하고 개발합니다.
+        </h2>
+    </div> -->
+    <!-- 푸터 웹버전 -->
+    <section class="footer_sec1">
+        <div>
+            <p>
+                <strong>주소</strong>
+                <span>서울특별시 서대문구 충정로 70, 웨스트게이트타워 10, 12, 16층 (미근동)</span>
+            </p>
+            <p>
+                <strong>TEL.</strong>
+                <span>080-234-0070</span>
+            </p>
+            <p>
+                <strong>사업자 등록번호</strong>
+                <span>110-86-10100</span>
+            </p>
+            <p>
+                <strong>대표자</strong>
+                <span>토마스제프리카소(THOMAS JEFFREY CASO)</span>
+            </p>
+            <p>
+                <strong>개인정보 관리</strong>
+                <span>황상현</span>
+            </p>
+            <p>
+                <strong>EMAIL</strong>
+                <span>admin@dolce-gusto.co.kr</span>
+            </p>
+        </div>
+        <!-- <div class="footer_sec1_box2">
+            <p>
+                <strong>연구소</strong>
+                <span>대전광역시 유성구 테크노 2로 291, 
+                    2층 스킨메드 R&amp;D Center</span>
+            </p>
+            <p>
+                <strong>TEL.</strong>
+                <span>042-867-8123</span>
+            </p>
+            <p>
+                <strong>FAX.</strong>
+                <span>042-867-8124</span>
+            </p>
+        </div> -->
+    </section>
+    <!-- 푸터 모바일 버전 -->
+    <section class="footer_sec1_mo">
+        <div>
+            <p class="footer_sec1_mo_bon">
+                <strong>대표자</strong>
+                <span>토마스제프리카소(THOMAS JEFFREY CASO)</span>
+            </p>
+           
+            <p class="footer_sec1_mo_bon_t">
+                <strong>T.</strong>
+                <span class="footer_sec1_mo_spl">080-234-0070</span>
+            </p>
+            <p class="footer_sec1_mo_bon_t">
+                <strong>E.</strong>
+                <span class="footer_sec1_mo_spl2">admin@dolce-gusto.co.kr</span>
+            </p>
+        </div>
+        <div>
+            <p class="footer_sec1_mo_bon">
+                <strong>주소</strong>
+                <span>서울특별시 서대문구 충정로 70, 웨스트게이트타워 10, 12, 16층 (미근동)</span>
+            </p>
+           
+            <p class="footer_sec1_mo_bon_t">
+                <strong>사업자 등록번호</strong>
+                <span class="footer_sec1_mo_spl">110-86-10100</span>
+            </p>
+            <p class="footer_sec1_mo_bon_t">
+                <strong>개인정보 관리 책임자</strong>
+                <span class="footer_sec1_mo_spl2">황상현</span>
+            </p>
+        </div>
+        <!-- <div class="footer_sec1_box2">
+            <p class="footer_sec1_mo_bon">
+                <strong>서울</strong>
+                <span>서울특별시 강남구 테헤란로 22길 15 A&amp;C 빌딩 3층</span>
+            </p>
+            <p class="footer_sec1_mo_bon_t">
+                <strong>T.</strong>
+                <span>1544-9159</span>
+            </p>
+            <p class="footer_sec1_mo_bon_t">
+                <strong>F.</strong>
+                <span>070-8233-5641</span>
+            </p>
+        </div> -->
+    </section>
+    <section class="footer_sec2">
+        <!-- footer 셀렉트 -->
+        <div class="footer_select">
+            <div class="footer_SelectWrap">
+                <div class="hiddenSelectBox">
+                    <select hidden="">
+                        <option value="스킨메드 공식 쇼핑몰">네스카페 돌체구스토</option>
+                        <option value="스킨메드 임상실험센터">롯데 네슬레 코리아</option>
+                    </select>
+                </div>
+                <div class="footer_CustomSelectBox">
+                    <button class="footer_CustomSelectView active">FAMILY SITE</button>
+
+                    <ul class="footer_CustomSelectBtns">
+                    <li><a class="footer_MoreSelectBtn" type="a" href="#" target="_blank">네스카페 돌체구스토</a></li>
+                    <li><a class="footer_MoreSelectBtn" type="a" href="#" target="_blank">롯데 네슬레 코리아</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bot">
+            <p>Copyright © 2024 NESCAFE All rights reserved.</p>
+            <figure>
+                <img src="./images/latest_logo_white.png" alt="footer_logo">
+            </figure>
+        </div>
+        <div class="footer_bot_mo">
+            <figure>
+                <img src="./images/latest_logo_white.png" alt="footer_logo">
+            </figure>
+            <p>Copyright © 2024 NESCAFE All rights reserved.</p>
+        </div>
+    </section>
+</footer>
+
+
+
+<script>
+    // 셀렉트
+        const footerAppResult = () => {
+            const footSelectWrapItems = document.querySelectorAll(".footer_SelectWrap");
+   
+            let ALinks = ['https://www.shop-skinmed.com/' , 'https://www.skinmedlab.com/'];
+
+            footSelectWrapItems.forEach((contentItem) => {
+                const footSelectBox = contentItem.querySelector("select");
+                if (!footSelectBox) return;
+
+                const footCustomSelectBox = contentItem.querySelector(
+                    ".footer_CustomSelectBox"
+                );
+                const footCustomSelectBtns = footCustomSelectBox.querySelector(
+                    ".footer_CustomSelectBtns"
+                );
+
+                // for (let i = 0; i < footSelectBox.length; i++) {
+                //     const footoptionValue = footSelectBox.options[i].value;
+                //     const footli = document.createElement("li");
+                //     const footbutton = document.createElement("a");
+                //     footbutton.classList.add("footer_MoreSelectBtn");
+                //     footbutton.type = "a";
+                //     footbutton.textContent = footoptionValue;
+                //     footli.appendChild(footbutton);
+                //     footCustomSelectBtns.appendChild(footli);
+                // }
+
+                 for (let i = 0; i < footSelectBox.length; i++) {
+                    const footoptionValue = footSelectBox.options[i].value;
+                    const footli = document.createElement("li");
+                    const footbutton = document.createElement("a");
+                    footbutton.classList.add("footer_MoreSelectBtn");
+                    footbutton.type = "a";
+                    footbutton.textContent = footoptionValue;
+                    footbutton.setAttribute("href" , ALinks[i]);
+                    footbutton.setAttribute("target" , "_blank");
+                    footli.appendChild(footbutton);
+                    footCustomSelectBtns.appendChild(footli);
+                }
+            });
+        };
+        footerAppResult();
+
+        const footcustomSelectView = document.querySelectorAll(".footer_CustomSelectView");
+
+        footcustomSelectView.forEach((btn) => {
+            btn.addEventListener("click", function () {
+                btn.classList.toggle("active");
+                if (btn.nextElementSibling) {
+                    btn.nextElementSibling.classList.toggle("active");
+                }
+            });
+        });
+
+        const footMoreSelectBtn = document.querySelectorAll(".footer_MoreSelectBtn");
+
+        footMoreSelectBtn.forEach((moreBtn) => {
+            moreBtn.addEventListener("click", function () {
+                const footmoreBtnText = moreBtn.innerText;
+                console.log(footmoreBtnText);
+                const footparentMoreBtn = moreBtn.closest(".footer_CustomSelectBtns");
+                const footeditViewBtn = footparentMoreBtn.previousElementSibling;
+
+                while (footeditViewBtn.firstChild) {
+                    footeditViewBtn.removeChild(footeditViewBtn.firstChild);
+                }
+
+                const textNode = document.createTextNode(footmoreBtnText);
+                footeditViewBtn.appendChild(textNode);
+
+                footeditViewBtn.classList.remove("active");
+                footparentMoreBtn.classList.remove("active");
+
+                const footnearByContent = moreBtn.closest(".footer_SelectWrap");
+                const footnearBySelectBox = footnearByContent.querySelector("select");
+                footnearBySelectBox.value = moreBtn.textContent;
+                console.log(`Selected value: ${footnearBySelectBox.value}`);
+            });
+        });
+
+</script>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>(주)스킨메드</title>
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./js/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/newsroom.css" />
+    <style>
+    .pageCountBoxs a {color:#000;}
+    </style>
+</head>
+
+<body>
+    <div class="scrollTopBoxs"></div>
+    <div class="md_wrap">
+        <!-- 헤더 -->
+        <div class="Header newsroom_Header"></div>
+        <main>
+            <!-- 뉴스룸 제목부분 -->
+            <section class="newsroom_sec1">
+                <h1 data-index="0">News Room</h1>
+                <p data-index="1">
+                    
+                    네스카페의 공지사항을 전해드립니다.
+                </p>
+            </section>
+
+            <!-- 뉴스룸 내용부분 -->
+             <section class="newsroom_sec2" data-index="2">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <figure><img src="./images/news.jpg" alt="news"></figure>
+                            <div>
+                                <p class="newsroom_sec2_title">
+                                    <span>
+                                    네슬레, '2030 네스카페 플랜'  경과보고서 발표...                                  </span>
+                                </p>
+                                <p class="newsroom_sec2_date">2024.09.28</p>
+                            </div>
+                        </a>
+                    </li>
+                 </ul>
+             </section>
+
+            <!-- 페이지네이션 -->
+            <section>
+                <div class="pagenation_box_newsroom">
+                    <ul>
+                        <li class='pageCountBoxs'><p class='active'>1</p></li>                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- 푸터 -->
+        <div class="Footer newsroom_Footer"></div>
+    </div>
+</body>
+
+</html>
+<script src="./js/newsroom.js"></script>
+<script type="module" src="./js/load.js"></script>

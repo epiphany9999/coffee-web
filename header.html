@@ -1,0 +1,265 @@
+<header id="header_skinmed">
+    <div class="header_wrap">
+      <a href="./index.html">
+        <figure class="header_logo">
+          <img class="header_logo_white" src="./images/latest_logo_white 1.png" alt="logo">
+          <img class="header_logo_black" src="./images/latest_logo_black.png" alt="logo">
+        </figure>
+      </a>
+      <div>
+        <nav>
+          <ul>
+            <li class="header_menu_wrap">
+              <a href="./brand.html" class="header_menubtn_btn">QUALITY</a>
+              <div class="header_menulist_wrap">
+                <div class="header_menulist_back">
+                  <ul>
+                    <li>
+                      <a href="#">QUALITY</a>
+                    </li>
+                    <li>
+                      <a href="#">Coffee Bean</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="header_menu_wrap_red">
+              <a class="header_menubtn_red" href="#">Recipe</a>
+              <div class="header_menulist_wrap">
+                <div class="header_menulist_back">
+                  <ul>
+                    <li>
+                      <a href="#">레시피 홈</a>
+                    </li>
+                    <li>
+                      <a href="#">음료</a>
+                    </li>
+                    <li>
+                      <a href="#">시즌(계절별)</a>
+                    </li>
+                    <li>
+                      <a href="#">레시피 살펴보기</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="header_menu_wrap">
+              <a href="./news.html" class="header_menubtn_btn">NEWS</a>
+              <div class="header_menulist_wrap">
+                <div class="header_menulist_back">
+                  <ul>
+                    <li>
+                      <a href="#">NEWS ROOM</a>
+                    </li>
+                    <li>
+                      <a href="#">NOTICE</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="header_menu_wrap">
+              <a href="./contact.html" class="header_menubtn_btn">CONTACT</a>
+              <div class="header_menulist_wrap">
+                <div class="header_menulist_back">
+                  <ul>
+                    <li>
+                      <a href="#">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_btns">
+          <button>
+            <p>
+              <span class="language_ko"><a href="#">KOR</a></span>
+              <!-- <span class="language_en"><a href="#">ENG</a></span> -->
+              <span class="language_en"><a href="#">ENG</a></span>
+              <span class="language_ch"><a href="#">CH</a></span>
+            </p>
+            <figure class="language_arrow">
+             <img class="language_arrow_black rotate" src="./images/img/header_arrow.png" alt="arrow_down">
+             <img class="language_arrow_white" src="./images/img/header_arrow_down_white.png" alt="arrow_down">
+            </figure>
+          </button>
+        </div>
+      </div>
+      <!--모바일 헤더-->
+      <nav class="header_nav_mo">
+        <div class="header_nav_mo_wrap">
+          <div class="header_nav_mo_box">
+            <div class="header_nav_mo_close">
+              <button></button>
+            </div>
+            <details>
+              <summary>
+                <p>QUALITY</p>
+              </summary>
+                <div>
+                  <a href="./brand.html">QUALITY</a>
+                  <a href="#">Coffee Bean</a>
+                </div>
+            </details>
+            <details class="header_nav_mo_rnd">
+              <summary>
+                <p>Recipe</p>
+              </summary>
+              <div>
+                <a href="#">레시피 홈</a>
+                <a href="#">음료</a>
+                <a href="#">시즌(계절별)</a>
+                <a href="#">레시피 살펴보기</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <p>NEWS</p>
+              </summary>
+              <div>
+                <a href="./news.html">NEWS ROOM</a>
+                <a href="#">NOTICE</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <p>CONTACT</p>
+              </summary>
+              <div>
+                <a href="./contact.html">CONTACT</a>
+              </div>
+            </details>
+          </div>
+          
+          <div class="header_nav_mo_language">
+            <button class="header_nav_mo_language_ko">KOR</button>
+            <button><a href="#">ENG</a></button>
+            <button><a href="#">CH</a></button>
+          </div>
+        </div>
+      </nav>
+      <div class="header_ham">
+          <button class="ham_btn">
+            <span class="ham_line"></span>
+            <span class="ham_line"></span>
+            <span class="ham_line"></span>
+          </button>
+      </div>
+    </div>
+  </header>
+
+
+
+<script>
+
+  const header = document.getElementById("header_skinmed");
+  const Monav = document.querySelector('.header_nav_mo');
+
+  let scrolllocation = 200;
+
+  window.addEventListener("scroll", function () {
+
+    const currentScroll = document.documentElement.scrollTop || document.documentElement.pageYOffset;
+
+    if (!Monav.classList.contains('on')) {
+
+      if (currentScroll > scrolllocation ) {
+
+        header.style.opacity = "0";
+        header.style.transition = "opacity 0.3s"; 
+        header.addEventListener('transitionend', function () {
+        if (header.style.opacity === "0") {
+            header.style.display = "none";
+          }
+        }, { once: true });
+
+      } else {
+        header.style.display = "block";
+        header.style.opacity = "1";  
+
+      }
+      
+      scrolllocation = currentScroll;
+    }
+  }, { passive: true });
+
+// 헤더 언어선택
+document.querySelector(".header_btns button").addEventListener("click", function () {
+const eng = document.querySelector(".language_en");
+const arrow = document.querySelector(".language_arrow img"); // CSS 클래스 경로에 맞게 수정
+
+eng.classList.toggle("hidden"); // 'hidden' 클래스 토글로 보이기/숨기기 전환
+
+arrow.classList.toggle("rotate"); // 'rotate' 클래스 토글로 화살표 회전 효과 적용
+});
+
+// 페이지 이동
+const params = new URLSearchParams(window.location.search);
+const scrollToClass = params.get('scrollTo');
+if (scrollToClass) {
+  const element = document.querySelector('.' + scrollToClass);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+// 모바일 메뉴
+const html = document.documentElement;
+const hamButton = document.querySelector('.ham_btn');
+const closeButton = document.querySelector('.header_nav_mo_close button');
+const navMo = document.querySelector('.header_nav_mo');
+
+hamButton.addEventListener('click', function () {
+  navMo.style.display = 'block'; // 먼저 display를 block으로 설정
+  setTimeout(() => {
+    navMo.classList.add('on'); // opacity를 1로 설정
+    html.classList.add('no-scroll');
+  }, 10); // display 변경 후 opacity 변경을 위한 짧은 지연
+});
+
+// 메뉴 닫기
+closeButton.addEventListener('click', function () {
+  navMo.classList.remove('on'); 
+  navMo.addEventListener('transitionend', () => {
+    if (!navMo.classList.contains('on')) {
+      navMo.style.display = 'none';
+       html.classList.remove('no-scroll'); 
+    }
+  }, { once: true });
+});
+
+// 모바일 서브 메뉴
+const allDetails = document.querySelectorAll('nav.header_nav_mo details'); 
+
+  allDetails.forEach(function (details) {
+    details.addEventListener('toggle', function () {
+      if (details.open) { 
+        allDetails.forEach(function (otherDetails) {
+          if (otherDetails !== details) {
+            otherDetails.removeAttribute('open');
+          }
+        });
+      }
+    });
+  }); 
+
+// 메인헤더
+const header_main = document.querySelector(".Header.main_Header > header");
+
+function updateHeaderVisibility() {
+if (header_main) {
+  if (window.scrollY > 50) {
+    header_main.classList.add("scrolled");
+  } else {
+    header_main.classList.remove("scrolled");
+  }
+}
+}
+updateHeaderVisibility();
+
+window.addEventListener("scroll", updateHeaderVisibility, { passive: true });
+</script>
