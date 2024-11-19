@@ -231,7 +231,7 @@ button:hover {
     transform: translate(-50%, -50%);
     width: 24px;
     height: 24px;
-    background: url(../../asset/images/contact/checked.png) no-repeat center;
+    background: url(/images/img/check-line.png) no-repeat center;
     background-size: contain;
 }
  .contact_sec2_check_title_name{
@@ -569,7 +569,7 @@ button:hover {
     padding: 0 15px;
     box-sizing: border-box;
     color: #A9A9A9;
-    background: url(../../asset/images/contact/email_select_down.png) no-repeat right 24px center;
+    background: url(/images/img/arrow-down-gray.png) no-repeat right 24px center;
     background-size: 20px;
     font-family: Pretendard;
     font-size: 17px;
@@ -581,7 +581,7 @@ button:hover {
 .sec3_email_CustomSelectBox .sec3_email_CustomSelectView.active {
     border: 2px solid #3E3E3E;
     color: #A9A9A9;
-    background: url(../../asset/images/contact/email_select_down.png) no-repeat right 24px center;
+    background: url(/images/img/arrow-down-gray.png) no-repeat right 24px center;
     background-size: 20px;
     background-color: #FAFAFA;
 }
@@ -711,7 +711,7 @@ button:hover {
     transform: translate(-50%, -50%);
     width: 16px;
     height: 16px;
-    background: url(../../asset/images/contact/agree_check.png) no-repeat center;
+    background: url(/images/img/check.png) no-repeat center;
     background-size: cover;
 }
 .contact_sec3_agree > p > strong{
@@ -732,14 +732,14 @@ button:hover {
     }
 
     .sec3_email_CustomSelectBox .sec3_email_CustomSelectView {
-        background: url(../../asset/images/contact/email_select_down.png) no-repeat right 10px center;
+        background: url(/images/img/header_arrow.png) no-repeat right 10px center;
         background-size: 14px;
         background-color: #FAFAFA;
         font-size: 14px;
     }
 
     .sec3_email_CustomSelectBox .sec3_email_CustomSelectView.active {
-        background: url(../../asset/images/contact/email_select_down.png) no-repeat right 10px center;
+        background: url(/images/img/header_arrow.png) no-repeat right 10px center;
         background-size: 14px;
         background-color: #FAFAFA;
     }

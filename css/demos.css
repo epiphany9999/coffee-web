@@ -1,0 +1,61 @@
+@charset "UTF_8";
+
+/* swiper demo css */
+.mo_contentsbox {
+    position: relative;
+    height: 100%;
+}
+
+.aboutSkinMedWrap .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutSkinMedWrap .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSkinMedWrap .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutSkinMedWrap .swiper-slide {
+    width: 65.2%;
+}
+
+
+/* ë“±ë¡í•„ì¦ ë° ì¸ì¦ì„œ swiper */
+.pcAboutSwiper .swiper-wrapper{
+    transition-timing-function: linear;
+}
+.pcAboutSwiper .swiper-slide {
+
+    width: 15.2%;
+    height:394px;
+    border-radius: 20px;
+    min-width:281px;
+}
+
+.pcAboutSwiper .swiper-button-next, .pcAboutSwiper .swiper-button-prev{ display:none;}
+
+@media all and (max-width:768px){
+
+    .pcAboutSwiper .swiper-slide { 
+        width: 230px;
+        height:321px;
+        min-width:230px;
+    }
+}
+@media(min-width:2200px){
+    .pcAboutSwiper .swiper-slide{
+        width: 11%;
+    }
+}

@@ -489,7 +489,7 @@ header:hover .header_menulist_wrap {
     top: 5%;
     width: 30px;
     height: 30px;
-    background-image: url("../images/header/header_mo_arrow.png");
+    background-image: url(/images/img/header_arrow.png);
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
@@ -576,7 +576,7 @@ header:hover .header_menulist_wrap {
   }
   .header_nav_mo .header_nav_mo_rnd summary::after {
 
-    background-image: url("../images/header/header_mo_arrow_red.png");
+    background-image: url(/images/img/header_arrow.png);
   }
 }
 
